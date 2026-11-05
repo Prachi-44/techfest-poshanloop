@@ -47,23 +47,23 @@ Many hackathon and challenge proposals focus on biometric fusion, ABHA identity 
 
 ```mermaid
 flowchart TD
-    subgraph Frontline["1. Frontline Identification & Trust"]
-        A["Trust Gate\n(Data Quality Heuristics)"] -->|Clean Data| B["BlindSpot View\n(Coverage vs Missing Data)"]
-        B -->|Uncovered Child| C["Cause Finder\n(Guided Family Dialogue)"]
+    subgraph Frontline["1. Frontline Identification and Trust"]
+        A["Trust Gate<br/>(Data Quality Heuristics)"] -->|Clean Data| B["BlindSpot View<br/>(Coverage vs Missing Data)"]
+        B -->|Uncovered Child| C["Cause Finder<br/>(Guided Family Dialogue)"]
     end
 
-    subgraph Coordination["2. Family Support & Referral"]
-        C -->|Actionable Plan| D["Referral Worklist\n(Barrier & Named Owner)"]
-        D -->|Hand-off Token| E["Care Receipt Slip\n(PL-XXXXX Reference)"]
+    subgraph Coordination["2. Family Support and Referral"]
+        C -->|Actionable Plan| D["Referral Worklist<br/>(Barrier and Named Owner)"]
+        D -->|Hand-off Token| E["Care Receipt Slip<br/>(PL-XXXXX Reference)"]
     end
 
     subgraph ResilientSync["3. Intermittent Connectivity"]
-        D <-->|Offline Journal| F["Poshan Passport\n(IndexedDB + UUID Idempotency)"]
+        D <-->|Offline Journal| F["Poshan Passport<br/>(IndexedDB + UUID Idempotency)"]
     end
 
-    subgraph ReceivingClosure["4. Facility Confirmation & Ledger"]
-        E -->|Family Presents Token| G["Facility Desk\n(Attended / Rescheduled)"]
-        G -->|Verified Outcome| H["Action-to-Closure Ledger\n(Supervisor Audit Trail)"]
+    subgraph ReceivingClosure["4. Facility Confirmation and Ledger"]
+        E -->|Family Presents Token| G["Facility Desk<br/>(Attended / Rescheduled)"]
+        G -->|Verified Outcome| H["Action-to-Closure Ledger<br/>(Supervisor Audit Trail)"]
     end
 ```
 
